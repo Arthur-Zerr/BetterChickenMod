@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,has_food=false": {
+      "model": "betterchicken:block/wood_feeder"
+    },
+    "facing=north,has_food=true": {
+      "model": "betterchicken:block/wood_feeder"
+    },
+    "facing=east,has_food=false": {
+      "model": "betterchicken:block/wood_feeder",
+      "y": 90
+    },
+    "facing=east,has_food=true": {
+      "model": "betterchicken:block/wood_feeder",
+      "y": 90
+    },
+    "facing=south,has_food=false": {
+      "model": "betterchicken:block/wood_feeder",
+      "y": 180
+    },
+    "facing=south,has_food=true": {
+      "model": "betterchicken:block/wood_feeder",
+      "y": 180
+    },
+    "facing=west,has_food=false": {
+      "model": "betterchicken:block/wood_feeder",
+      "y": 270
+    },
+    "facing=west, has_food=true": {
+      "model": "betterchicken:block/wood_feeder",
+      "y": 270
+    }
+  }
+}

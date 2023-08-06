@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "betterchicken:wheat_nest",
-    "betterchicken:wooden_nest"
+    "betterchicken:wooden_nest",
+    "betterchicken:wood_feeder"
   ]
 }

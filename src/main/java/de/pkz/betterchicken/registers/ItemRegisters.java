@@ -2,7 +2,8 @@ package de.pkz.betterchicken.registers;
 
 import de.pkz.betterchicken.BetterChicken;
 import de.pkz.betterchicken.block.wheatNest.WheatNestBlock;
-import de.pkz.betterchicken.block.woodenNest.WoodNestBlock;
+import de.pkz.betterchicken.block.woodFeeder.WoodFeederBlock;
+import de.pkz.betterchicken.block.woodNest.WoodNestBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -29,4 +30,9 @@ public class ItemRegisters {
     public static final RegistryObject<BlockItem> WOOD_NEST_BLOCK_ITEM = ITEMS.register(WoodNestBlock.BLOCK_ID,
             () -> new BlockItem(BlockRegister.WOOD_NEST_BLOCK.get(),
                     new Item.Properties()));
+
+    public static final RegistryObject<BlockItem> WOOD_FEEDER_BLOCK_ITEM = ITEMS.register(WoodFeederBlock.BLOCK_ID,
+            () -> new BlockItem(BlockRegister.WOOD_FEEDER_BLOCK.get(),
+                    new Item.Properties()));
+
 }

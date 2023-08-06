@@ -1,4 +1,4 @@
-package de.pkz.betterchicken.block.woodenNest;
+package de.pkz.betterchicken.block.woodNest;
 
 import de.pkz.betterchicken.BetterChicken;
 import de.pkz.betterchicken.registers.BlockEntityRegister;

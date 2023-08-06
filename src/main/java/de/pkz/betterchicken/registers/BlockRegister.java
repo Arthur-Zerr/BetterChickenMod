@@ -2,7 +2,8 @@ package de.pkz.betterchicken.registers;
 
 import de.pkz.betterchicken.BetterChicken;
 import de.pkz.betterchicken.block.wheatNest.WheatNestBlock;
-import de.pkz.betterchicken.block.woodenNest.WoodNestBlock;
+import de.pkz.betterchicken.block.woodFeeder.WoodFeederBlock;
+import de.pkz.betterchicken.block.woodNest.WoodNestBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -23,4 +24,8 @@ public class BlockRegister {
                     .mapColor(MapColor.COLOR_YELLOW)
                     .strength(5.f, 17.f)));
 
+    public static final RegistryObject<WoodFeederBlock> WOOD_FEEDER_BLOCK = BLOCKS.register(WoodFeederBlock.BLOCK_ID,
+            () -> new WoodFeederBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(5.f, 17.f)));
 }

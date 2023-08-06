@@ -1,6 +1,5 @@
-package de.pkz.betterchicken.block.woodenNest;
+package de.pkz.betterchicken.block.woodNest;
 
-import de.pkz.betterchicken.helpers.VoxelShapeHelper;
 import de.pkz.betterchicken.registers.BlockEntityRegister;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -61,18 +60,14 @@ public class WoodNestBlock extends HorizontalDirectionalBlock implements EntityB
         return super.use(state, level, pos, player, hand, hitResult);
     }
 
-    @Override
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
-        return makeShape();
-    }
-
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext ctx) {
         return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite());
     }
 
-    public VoxelShape makeShape() {
+    @Override
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
         VoxelShape shape = Shapes.empty();
         shape = Shapes.join(shape, Shapes.box(0.0625, 0, 0.0625, 0.9375, 0.1875, 0.9375), BooleanOp.OR);
         return shape;
