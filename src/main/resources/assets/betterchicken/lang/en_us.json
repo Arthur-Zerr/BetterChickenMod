@@ -1,4 +1,9 @@
 {
+  "itemGroup.betterchicken.creative_tab": "Better Chicken",
   "entity.betterchicken.rooster_entity": "Rooster",
-  "entity.betterchicken.chicken_entity": "Chicken"
+  "entity.betterchicken.chicken_entity": "Chicken",
+  "block.betterchicken.wheat_nest": "Wheat Nest",
+  "block.betterchicken.wood_nest": "Wood Nest",
+  "item.betterchicken.rooster_spawn_egg": "Rooster Spawn Egg",
+  "item.betterchicken.chicken_spawn_egg": "Chicken Spawn Egg"
 }

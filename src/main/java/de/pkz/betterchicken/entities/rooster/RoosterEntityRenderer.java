@@ -8,7 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class RoosterEntityRenderer extends MobRenderer<RoosterEntity, RoosterEntityModel<RoosterEntity>> {
 
-    private static final ResourceLocation TEXTURE = new ResourceLocation(BetterChicken.MODID, "textures/rooster.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(BetterChicken.MODID, "textures/entities/rooster.png");
 
     public RoosterEntityRenderer(EntityRendererProvider.Context ctx) {
         super(ctx, new RoosterEntityModel<>(ctx.bakeLayer(RoosterEntityModel.LAYER_LOCATION)), 0.3f);

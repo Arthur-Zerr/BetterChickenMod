@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "egg_amount=0": {
+      "model": "betterchicken:block/wheat_nest"
+    },
+    "egg_amount=1": {
+      "model": "betterchicken:block/wheat_nest"
+    },
+    "egg_amount=2": {
+      "model": "betterchicken:block/wheat_nest"
+    },
+    "egg_amount=3": {
+      "model": "betterchicken:block/wheat_nest"
+    }
+  }
+}

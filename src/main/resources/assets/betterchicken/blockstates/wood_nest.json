@@ -1,0 +1,78 @@
+{
+  "variants": {
+    "facing=north,egg_amount=0": {
+      "model": "betterchicken:block/wood_nest"
+    },
+    "facing=north,egg_amount=1": {
+      "model": "betterchicken:block/wood_nest"
+    },
+    "facing=north,egg_amount=2": {
+      "model": "betterchicken:block/wood_nest"
+    },
+    "facing=north,egg_amount=3": {
+      "model": "betterchicken:block/wood_nest"
+    },
+    "facing=north,egg_amount=4": {
+      "model": "betterchicken:block/wood_nest"
+    },
+    "facing=east,egg_amount=0": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 90
+    },
+    "facing=east,egg_amount=1": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 90
+    },
+    "facing=east,egg_amount=2": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 90
+    },
+    "facing=east,egg_amount=3": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 90
+    },
+    "facing=east,egg_amount=4": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 90
+    },
+    "facing=south,egg_amount=0": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 180
+    },
+    "facing=south,egg_amount=1": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 180
+    },
+    "facing=south,egg_amount=2": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 180
+    },
+    "facing=south,egg_amount=3": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 180
+    },
+    "facing=south,egg_amount=4": {
+      "model": "betterchicken:block/wood_nest"
+    },
+    "facing=west,egg_amount=0": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 270
+    },
+    "facing=west, egg_amount=1": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 270
+    },
+    "facing=west, egg_amount=2": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 270
+    },
+    "facing=west, egg_amount=3": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 270
+    },
+    "facing=west, egg_amount=4": {
+      "model": "betterchicken:block/wood_nest",
+      "y": 270
+    }
+  }
+}
