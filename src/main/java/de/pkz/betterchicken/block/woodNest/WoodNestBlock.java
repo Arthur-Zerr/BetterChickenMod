@@ -1,5 +1,7 @@
 package de.pkz.betterchicken.block.woodNest;
 
+import de.pkz.betterchicken.annotation.Block;
+import de.pkz.betterchicken.interfaces.IBlockRegister;
 import de.pkz.betterchicken.registers.BlockEntityRegister;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -10,13 +12,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -24,14 +27,27 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-public class WoodNestBlock extends HorizontalDirectionalBlock implements EntityBlock {
-    public static final String BLOCK_ID = "wood_nest";
+@Block
+public class WoodNestBlock extends HorizontalDirectionalBlock implements EntityBlock, IBlockRegister {
 
     public static final IntegerProperty EGG_AMOUNT = IntegerProperty.create("egg_amount", 0, 4);
 
+    public WoodNestBlock() {
+        super(BlockBehaviour.Properties.of()
+                .mapColor(MapColor.COLOR_YELLOW)
+                .strength(5.f, 17.f));
+    }
+
     public WoodNestBlock(Properties properties) {
         super(properties);
-        registerDefaultState(this.defaultBlockState().setValue(EGG_AMOUNT, 0).setValue(FACING, Direction.NORTH));
+        registerDefaultState(this.defaultBlockState()
+                .setValue(EGG_AMOUNT, 0)
+                .setValue(FACING, Direction.NORTH));
+    }
+
+    @Override
+    public String BLOCK_ID() {
+        return "wood_nest";
     }
 
     @Nullable
@@ -41,7 +57,7 @@ public class WoodNestBlock extends HorizontalDirectionalBlock implements EntityB
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.Builder<net.minecraft.world.level.block.Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(EGG_AMOUNT);
         builder.add(FACING);

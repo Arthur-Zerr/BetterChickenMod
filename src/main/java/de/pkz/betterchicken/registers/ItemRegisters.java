@@ -27,7 +27,7 @@ public class ItemRegisters {
             () -> new BlockItem(BlockRegister.WHEAT_NEST_BLOCK.get(),
                     new Item.Properties()));
 
-    public static final RegistryObject<BlockItem> WOOD_NEST_BLOCK_ITEM = ITEMS.register(WoodNestBlock.BLOCK_ID,
+    public static final RegistryObject<BlockItem> WOOD_NEST_BLOCK_ITEM = ITEMS.register("wood_nest",
             () -> new BlockItem(BlockRegister.WOOD_NEST_BLOCK.get(),
                     new Item.Properties()));
 

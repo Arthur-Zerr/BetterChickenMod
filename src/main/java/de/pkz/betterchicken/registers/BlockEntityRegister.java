@@ -19,7 +19,7 @@ public class BlockEntityRegister {
             () -> BlockEntityType.Builder.of(WheatNestBlockEntity::new, BlockRegister.WHEAT_NEST_BLOCK.get())
                     .build(null));
 
-    public static final RegistryObject<BlockEntityType<WoodNestBlockEntity>> WOOD_NEST_BLOCK_ENTITY = BLOCK_ENTITIES.register(WoodNestBlock.BLOCK_ID,
+    public static final RegistryObject<BlockEntityType<WoodNestBlockEntity>> WOOD_NEST_BLOCK_ENTITY = BLOCK_ENTITIES.register("wood_nest",
             () -> BlockEntityType.Builder.of(WoodNestBlockEntity::new, BlockRegister.WOOD_NEST_BLOCK.get())
                     .build(null));
 
